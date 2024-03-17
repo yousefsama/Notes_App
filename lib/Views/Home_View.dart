@@ -25,7 +25,7 @@ class HomeView extends StatelessWidget {
             Icons.add,
             color: Colors.white,
           )),
-      body: NotesView(),
+      body: const NotesView(),
     );
   }
 }
