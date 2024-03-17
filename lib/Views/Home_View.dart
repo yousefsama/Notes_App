@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noteapp/Views/CustomViewsHelper/AddNoteButtomSheet.dart';
 
 import 'package:noteapp/Views/Notes_View.dart';
 
@@ -11,12 +12,18 @@ class HomeView extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.black.withOpacity(0.8),
-          onPressed: () {},
+          onPressed: () {
+            showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return AddNoteButtomSheet();
+                });
+          },
           child: const Icon(
             Icons.add,
             color: Colors.white,
           )),
-      body: const NotesView(),
+      body: NotesView(),
     );
   }
 }
