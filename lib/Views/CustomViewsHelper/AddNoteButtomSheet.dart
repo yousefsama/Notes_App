@@ -22,8 +22,9 @@ class AddNoteButtomSheet extends StatelessWidget {
         },
         builder: (context, state) {
           return ModalProgressHUD(
-              inAsyncCall: state is AddNoteLoading ? true : false,
-              child: ValidationNotesForm());
+            inAsyncCall: state is AddNoteLoading ? true : false,
+            child: const ValidationNotesForm(),
+          );
         },
       ),
     );
