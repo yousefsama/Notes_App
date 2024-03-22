@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:noteapp/Models/Notes_Model.dart';
 import 'package:noteapp/Widgets/CustomButtom.dart';
 import 'package:noteapp/Widgets/CustomTextField.dart';
-import 'package:noteapp/cubits/cubit/cubit/add_note_cubit.dart';
+import 'package:noteapp/cubits/cubit/add_notes_cubit/add_note_cubit.dart';
 
 class ValidationNotesForm extends StatefulWidget {
   const ValidationNotesForm({
